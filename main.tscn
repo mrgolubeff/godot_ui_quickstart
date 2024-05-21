@@ -64,6 +64,16 @@ grow_vertical = 2
 texture = ExtResource("1_iyp6b")
 expand_mode = 1
 
+[node name="Nickname" type="Label" parent="PlayerInfoBox"]
+layout_mode = 0
+offset_left = 136.0
+offset_top = 40.0
+offset_right = 329.0
+offset_bottom = 105.0
+theme_override_font_sizes/font_size = 32
+text = "mrgolubeff"
+vertical_alignment = 1
+
 [node name="CoinContainer" type="Panel" parent="."]
 layout_mode = 1
 anchors_preset = 1
@@ -88,3 +98,23 @@ offset_bottom = 21.5
 grow_vertical = 2
 texture = ExtResource("2_fc6x2")
 expand_mode = 1
+
+[node name="CoinsText" type="Label" parent="CoinContainer"]
+layout_mode = 0
+offset_left = 74.0
+offset_top = 8.0
+offset_right = 155.0
+offset_bottom = 74.0
+theme_override_font_sizes/font_size = 24
+text = "Coins:"
+vertical_alignment = 1
+
+[node name="CoinsCounter" type="Label" parent="CoinContainer"]
+layout_mode = 0
+offset_left = 159.0
+offset_top = 8.0
+offset_right = 213.0
+offset_bottom = 74.0
+theme_override_font_sizes/font_size = 24
+text = "?"
+vertical_alignment = 1

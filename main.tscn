@@ -1,5 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://bjkt8kresi7gr"]
+[gd_scene load_steps=7 format=3 uid="uid://bjkt8kresi7gr"]
 
+[ext_resource type="Script" path="res://main.gd" id="1_hxqng"]
 [ext_resource type="Texture2D" uid="uid://buj2yke2e0dk8" path="res://icon.svg" id="1_iyp6b"]
 [ext_resource type="Texture2D" uid="uid://7jo7ite331lc" path="res://coins-pile.svg" id="2_fc6x2"]
 
@@ -27,6 +28,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_hxqng")
 
 [node name="PlayerInfoBox" type="Panel" parent="."]
 layout_mode = 0
@@ -125,6 +127,7 @@ text = "Coins:"
 vertical_alignment = 1
 
 [node name="CoinsCounter" type="Label" parent="CoinContainer"]
+unique_name_in_owner = true
 layout_mode = 0
 offset_left = 159.0
 offset_top = 8.0
@@ -148,3 +151,5 @@ offset_bottom = 50.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "Grant Coins"
+
+[connection signal="pressed" from="GrantCoinsButton" to="." method="_on_grant_coins_button_pressed"]

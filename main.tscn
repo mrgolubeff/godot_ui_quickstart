@@ -66,13 +66,28 @@ expand_mode = 1
 
 [node name="Nickname" type="Label" parent="PlayerInfoBox"]
 layout_mode = 0
-offset_left = 136.0
-offset_top = 40.0
-offset_right = 329.0
-offset_bottom = 105.0
+offset_left = 137.0
+offset_top = 16.0
+offset_right = 330.0
+offset_bottom = 81.0
 theme_override_font_sizes/font_size = 32
 text = "mrgolubeff"
 vertical_alignment = 1
+
+[node name="ExperienceProgress" type="ProgressBar" parent="PlayerInfoBox"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 137.0
+offset_top = -64.0
+offset_right = -14.0
+offset_bottom = -37.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 18
+value = 55.0
 
 [node name="CoinContainer" type="Panel" parent="."]
 layout_mode = 1
